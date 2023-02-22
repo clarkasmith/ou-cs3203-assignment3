@@ -23,3 +23,19 @@ int ProductArray(vector<int> vec) {
 
 	return product;
 }
+
+int main() {
+	vector<int> vec;
+	int x;
+	while (cin >> x) {
+		vec.push_back(x);
+	}
+
+	int sum, product;
+
+	sum = SumArray(vec);
+	product = ProductArray(vec);
+
+	cout << "The sum of these numbers is: " << sum << endl;
+	cout << "The product of these numbers is: " << product << endl;
+}
