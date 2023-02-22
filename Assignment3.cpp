@@ -4,6 +4,8 @@ using namespace std;
 
 int SumArray(vector<int> vec) {
 
+	//Returns the sum of all elements in a given vector
+
 	int sum = 0;
 
 	for (int i = 0; i < vec.size(); i++) {
@@ -14,6 +16,8 @@ int SumArray(vector<int> vec) {
 }
 
 int ProductArray(vector<int> vec) {
+
+	//Returns the product of all elements in a given vector
 
 	int product = 1;
 
@@ -36,6 +40,7 @@ vector<int> Reverse(vector<int> vec) {
 }
 
 int main() {
+
 	vector<int> vec;
 	int x;
 	while (cin >> x) {
@@ -47,6 +52,7 @@ int main() {
 	sum = SumArray(vec);
 	product = ProductArray(vec);
 
+	//Display the sum and the product of the input vector
 	cout << "The sum of these numbers is: " << sum << endl;
 	cout << "The product of these numbers is: " << product << endl;
 
