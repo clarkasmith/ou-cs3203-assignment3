@@ -49,4 +49,12 @@ int main() {
 
 	cout << "The sum of these numbers is: " << sum << endl;
 	cout << "The product of these numbers is: " << product << endl;
+
+	vector<int> reversed_vec = Reverse(vec);
+
+	cout << "Reversed List: " << endl;
+
+	for (int i = 0; i < reversed_vec.size(); i++) {
+		cout << reversed_vec.at(i) << " ";
+	}
 }
