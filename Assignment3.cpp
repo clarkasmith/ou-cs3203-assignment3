@@ -24,6 +24,17 @@ int ProductArray(vector<int> vec) {
 	return product;
 }
 
+vector<int> Reverse(vector<int> vec) {
+
+	vector<int> reversed_vec;
+
+	for (int i = 0; i < vec.size(); i++) {
+		reversed_vec.push_back(vec.at(vec.size() - 1 - i));
+	}
+
+	return reversed_vec;
+}
+
 int main() {
 	vector<int> vec;
 	int x;
@@ -38,4 +49,12 @@ int main() {
 
 	cout << "The sum of these numbers is: " << sum << endl;
 	cout << "The product of these numbers is: " << product << endl;
+
+	vector<int> reversed_vec = Reverse(vec);
+
+	cout << "Reversed List: " << endl;
+
+	for (int i = 0; i < reversed_vec.size(); i++) {
+		cout << reversed_vec.at(i) << " ";
+	}
 }
