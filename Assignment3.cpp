@@ -24,6 +24,17 @@ int ProductArray(vector<int> vec) {
 	return product;
 }
 
+vector<int> Reverse(vector<int> vec) {
+
+	vector<int> reversed_vec;
+
+	for (int i = 0; i < vec.size(); i++) {
+		reversed_vec.push_back(vec.at(vec.size() - 1 - i));
+	}
+
+	return reversed_vec;
+}
+
 int main() {
 	vector<int> vec;
 	int x;
